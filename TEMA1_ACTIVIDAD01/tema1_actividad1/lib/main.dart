@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
                 style: GoogleFonts.lobster(fontSize: 32, color: Colors.black),
               ),
               Text(
-                'github.com/nicomassaccesi',
+                'https://github.com/Nikelaos99/PROMM',
                 style: GoogleFonts.roboto(fontSize: 24, color: Colors.grey),
               ),
             ],
