@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tema1_actividad1/main.dart';
 
-
 class Iconos extends StatelessWidget {
   const Iconos({super.key});
 

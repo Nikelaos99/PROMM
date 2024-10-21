@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tema1_actividad1/main.dart';
 
-
 class FotosEnColumna extends StatelessWidget {
   const FotosEnColumna({super.key});
 

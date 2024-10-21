@@ -3,6 +3,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:tema1_actividad1/fotos_en_columna.dart';
 import 'package:tema1_actividad1/fotos_en_fila.dart';
 import 'package:tema1_actividad1/iconos.dart';
+import 'package:tema1_actividad1/piramide.dart';
+import 'package:tema1_actividad1/reto.dart';
+import 'package:tema1_actividad1/contador.dart';
+
 void main() {
   runApp(const MaterialApp(title: "Mi aplicacion", home: HomePage()));
 }
@@ -113,6 +117,33 @@ Widget buildMenuItems(BuildContext context) => Column(
             Navigator.of(context).pushReplacement(MaterialPageRoute(
               builder: (context) => const Iconos(),
             ));
+          },
+        ),
+        ListTile(
+          leading: const Icon(Icons.star),
+          title: const Text('Reto'),
+          onTap: () {
+            Navigator.pop(context);
+            Navigator.of(context).pushReplacement(
+                MaterialPageRoute(builder: (context) => const Reto()));
+          },
+        ),
+        ListTile(
+          leading: const Icon(Icons.keyboard_arrow_up_outlined),
+          title: const Text('Pirámide'),
+          onTap: () {
+            Navigator.pop(context);
+            Navigator.of(context).pushReplacement(
+                MaterialPageRoute(builder: (context) => const Piramide()));
+          },
+        ),
+        ListTile(
+          leading: const Icon(Icons.numbers),
+          title: const Text('Contador'),
+          onTap: () {
+            Navigator.pop(context);
+            Navigator.of(context).pushReplacement(
+                MaterialPageRoute(builder: (context) => const Contador()));
           },
         ),
       ],
