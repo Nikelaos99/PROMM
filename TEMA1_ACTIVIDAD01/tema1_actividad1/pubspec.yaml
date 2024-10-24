@@ -73,6 +73,22 @@ flutter:
     - assets/images/perro.jpg
     - assets/images/cacatua.jpg
     - assets/images/gato.jpg
+    - assets/images/retrato.jpg
+    - assets/images/nuevo.jpg
+    - assets/images/pilotando.jpg
+    - assets/images/francia.jpg
+    - assets/images/arquitectura.jpg
+    - assets/images/retrato.jpg
+    - assets/images/grid1.jpg
+    - assets/images/grid2.jpg
+    - assets/images/grid3.jpg
+    - assets/images/grid4.jpg
+    - assets/images/grid5.jpg
+    - assets/images/grid6.jpg
+    - assets/images/grid7.jpg
+    - assets/images/grid8.jpg
+    - assets/images/grid9.jpg
+    - assets/images/relax.jpg
     
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

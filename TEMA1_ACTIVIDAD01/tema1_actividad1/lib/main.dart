@@ -6,6 +6,7 @@ import 'package:tema1_actividad1/iconos.dart';
 import 'package:tema1_actividad1/piramide.dart';
 import 'package:tema1_actividad1/reto.dart';
 import 'package:tema1_actividad1/contador.dart';
+import 'package:tema1_actividad1/instagram_main.dart';
 
 void main() {
   runApp(const MaterialApp(title: "Mi aplicacion", home: HomePage()));
@@ -146,5 +147,14 @@ Widget buildMenuItems(BuildContext context) => Column(
                 MaterialPageRoute(builder: (context) => const Contador()));
           },
         ),
+        ListTile(
+          leading: const Icon(Icons.camera_alt),
+          title: const Text('Instagram'),
+          onTap: () {
+            Navigator.pop(context);
+            Navigator.of(context).pushReplacement(
+                MaterialPageRoute(builder: (context) => const Instagram()));
+          },
+        )
       ],
     );
