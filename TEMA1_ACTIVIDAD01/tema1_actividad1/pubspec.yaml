@@ -67,28 +67,28 @@ flutter:
   #   - images/a_dot_ham.jpeg
 
   assets:
-    - assets/images/capybara.jpg
-    - assets/images/conejo.jpg
-    - assets/images/huron.jpg
-    - assets/images/perro.jpg
-    - assets/images/cacatua.jpg
-    - assets/images/gato.jpg
-    - assets/images/retrato.jpg
-    - assets/images/nuevo.jpg
-    - assets/images/pilotando.jpg
-    - assets/images/francia.jpg
-    - assets/images/arquitectura.jpg
-    - assets/images/retrato.jpg
-    - assets/images/grid1.jpg
-    - assets/images/grid2.jpg
-    - assets/images/grid3.jpg
-    - assets/images/grid4.jpg
-    - assets/images/grid5.jpg
-    - assets/images/grid6.jpg
-    - assets/images/grid7.jpg
-    - assets/images/grid8.jpg
-    - assets/images/grid9.jpg
-    - assets/images/relax.jpg
+    - assets/images/piramide/capybara.jpg
+    - assets/images/piramide/conejo.jpg
+    - assets/images/piramide/huron.jpg
+    - assets/images/piramide/perro.jpg
+    - assets/images/piramide/cacatua.jpg
+    - assets/images/piramide/gato.jpg
+    - assets/images/instagram/retrato.jpg
+    - assets/images/instagram/nuevo.jpg
+    - assets/images/instagram/pilotando.jpg
+    - assets/images/instagram/francia.jpg
+    - assets/images/instagram/arquitectura.jpg
+    - assets/images/instagram/retrato.jpg
+    - assets/images/instagram/grid1.jpg
+    - assets/images/instagram/grid2.jpg
+    - assets/images/instagram/grid3.jpg
+    - assets/images/instagram/grid4.jpg
+    - assets/images/instagram/grid5.jpg
+    - assets/images/instagram/grid6.jpg
+    - assets/images/instagram/grid7.jpg
+    - assets/images/instagram/grid8.jpg
+    - assets/images/instagram/grid9.jpg
+    - assets/images/instagram/relax.jpg
     
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

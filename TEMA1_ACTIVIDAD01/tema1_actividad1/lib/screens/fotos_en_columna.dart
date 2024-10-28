@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tema1_actividad1/main.dart';
+import 'package:tema1_actividad1/screens/navegacion_drawer.dart';
 
 class FotosEnColumna extends StatelessWidget {
   const FotosEnColumna({super.key});
@@ -16,21 +16,21 @@ class FotosEnColumna extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.network(
-                'https://picsum.photos/50?image=5',
-                width: 50,
-                height: 50,
+                'https://picsum.photos/100?image=5',
+                width: 100,
+                height: 100,
               ),
               const SizedBox(height: 10),
               Image.network(
-                'https://picsum.photos/50?image=15',
-                width: 50,
-                height: 50,
+                'https://picsum.photos/100?image=15',
+                width: 100,
+                height: 100,
               ),
               const SizedBox(height: 10),
               Image.network(
-                'https://picsum.photos/50?image=25',
-                width: 50,
-                height: 50,
+                'https://picsum.photos/100?image=25',
+                width: 100,
+                height: 100,
               ),
             ],
           ),

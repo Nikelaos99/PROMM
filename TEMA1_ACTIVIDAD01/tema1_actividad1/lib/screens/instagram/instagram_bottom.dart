@@ -27,7 +27,7 @@ class InstagramBottomState extends State<InstagramBottom> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(45),
                         image: const DecorationImage(
-                          image: AssetImage('assets/images/nuevo.jpg'),
+                          image: AssetImage('assets/images/instagram/nuevo.jpg'),
                         ),
                         border: Border.all(color: Colors.black, width: 1)),
                   ),
@@ -46,7 +46,7 @@ class InstagramBottomState extends State<InstagramBottom> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(45),
                         image: const DecorationImage(
-                          image: AssetImage('assets/images/pilotando.jpg'),
+                          image: AssetImage('assets/images/instagram/pilotando.jpg'),
                           fit: BoxFit.cover,
                         ),
                         border: Border.all(color: Colors.black, width: 1)),
@@ -66,7 +66,7 @@ class InstagramBottomState extends State<InstagramBottom> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(45),
                         image: const DecorationImage(
-                          image: AssetImage('assets/images/francia.jpg'),
+                          image: AssetImage('assets/images/instagram/francia.jpg'),
                           fit: BoxFit.cover,
                         ),
                         border: Border.all(color: Colors.black, width: 1)),
@@ -86,7 +86,7 @@ class InstagramBottomState extends State<InstagramBottom> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(45),
                         image: const DecorationImage(
-                          image: AssetImage('assets/images/arquitectura.jpg'),
+                          image: AssetImage('assets/images/instagram/arquitectura.jpg'),
                           fit: BoxFit.cover,
                         ),
                         border: Border.all(color: Colors.black, width: 1)),
@@ -106,7 +106,7 @@ class InstagramBottomState extends State<InstagramBottom> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(45),
                         image: const DecorationImage(
-                          image: AssetImage('assets/images/retrato.jpg'),
+                          image: AssetImage('assets/images/instagram/retrato.jpg'),
                           fit: BoxFit.cover,
                         ),
                         border: Border.all(color: Colors.black, width: 1)),
@@ -158,7 +158,7 @@ class InstagramBottomState extends State<InstagramBottom> {
                           width: 100,
                           height: 100,
                           child: Image.asset(
-                            'assets/images/grid${index + 1}.jpg',
+                            'assets/images/instagram/grid${index + 1}.jpg',
                             fit: BoxFit.cover,
                           ),
                         );
@@ -169,7 +169,7 @@ class InstagramBottomState extends State<InstagramBottom> {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
                           image: const DecorationImage(
-                            image: AssetImage('assets/images/relax.jpg'),
+                            image: AssetImage('assets/images/instagram/relax.jpg'),
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -189,7 +189,7 @@ class InstagramBottomState extends State<InstagramBottom> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(45),
                 image: const DecorationImage(
-                  image: AssetImage('assets/images/retrato.jpg'),
+                  image: AssetImage('assets/images/instagram/retrato.jpg'),
                   fit: BoxFit.cover,
                 ),
               ),

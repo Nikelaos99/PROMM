@@ -18,7 +18,7 @@ class InstagramTop extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(45), // Redondea la imagen
                   image: const DecorationImage(
-                    image: AssetImage('assets/images/retrato.jpg'),
+                    image: AssetImage('assets/images/instagram/retrato.jpg'),
                     fit: BoxFit.cover, // Para que la imagen cubra todo el área
                   ),
                 ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tema1_actividad1/main.dart';
+import 'package:tema1_actividad1/screens/navegacion_drawer.dart';
 
 class Piramide extends StatelessWidget {
   const Piramide({super.key});
@@ -20,7 +20,7 @@ class Piramide extends StatelessWidget {
                 children: <Widget>[
                   Column(
                     children: <Widget>[
-                      Image.asset('assets/images/capybara.jpg',
+                      Image.asset('assets/images/piramide/capybara.jpg',
                           width: 100, height: 100),
                       Text('Capybara'),
                     ],
@@ -32,7 +32,7 @@ class Piramide extends StatelessWidget {
                 children: <Widget>[
                   Column(
                     children: <Widget>[
-                      Image.asset('assets/images/conejo.jpg',
+                      Image.asset('assets/images/piramide/conejo.jpg',
                           width: 100, height: 100),
                       Text('Conejo'),
                     ],
@@ -40,7 +40,7 @@ class Piramide extends StatelessWidget {
                   SizedBox(width: 10),
                   Column(
                     children: <Widget>[
-                      Image.asset('assets/images/huron.jpg',
+                      Image.asset('assets/images/piramide/huron.jpg',
                           width: 100, height: 100),
                       Text('Hurón'),
                     ],
@@ -52,7 +52,7 @@ class Piramide extends StatelessWidget {
                 children: <Widget>[
                   Column(
                     children: <Widget>[
-                      Image.asset('assets/images/perro.jpg',
+                      Image.asset('assets/images/piramide/perro.jpg',
                           width: 100, height: 100),
                       Text('Perro'),
                     ],
@@ -60,7 +60,7 @@ class Piramide extends StatelessWidget {
                   SizedBox(width: 10),
                   Column(
                     children: <Widget>[
-                      Image.asset('assets/images/cacatua.jpg',
+                      Image.asset('assets/images/piramide/cacatua.jpg',
                           width: 100, height: 100),
                       Text('Cacatúa'),
                     ],
@@ -68,7 +68,7 @@ class Piramide extends StatelessWidget {
                   SizedBox(width: 10),
                   Column(
                     children: <Widget>[
-                      Image.asset('assets/images/gato.jpg',
+                      Image.asset('assets/images/piramide/gato.jpg',
                           width: 100, height: 100),
                       Text('Gato'),
                     ],

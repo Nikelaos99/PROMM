@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tema1_actividad1/main.dart';
-import 'package:tema1_actividad1/instagram_top.dart';
-import 'package:tema1_actividad1/instagram_middle.dart';
-import 'package:tema1_actividad1/instagram_bottom.dart';
+import 'package:tema1_actividad1/screens/navegacion_drawer.dart';
+import 'package:tema1_actividad1/screens/instagram/instagram_top.dart';
+import 'package:tema1_actividad1/screens/instagram/instagram_middle.dart';
+import 'package:tema1_actividad1/screens/instagram/instagram_bottom.dart';
 
 class Instagram extends StatelessWidget {
   const Instagram({super.key});
