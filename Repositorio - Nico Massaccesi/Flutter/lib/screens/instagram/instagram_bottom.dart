@@ -27,7 +27,8 @@ class InstagramBottomState extends State<InstagramBottom> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(45),
                         image: const DecorationImage(
-                          image: AssetImage('assets/images/instagram/nuevo.jpg'),
+                          image:
+                              AssetImage('assets/images/instagram/nuevo.jpg'),
                         ),
                         border: Border.all(color: Colors.black, width: 1)),
                   ),
@@ -46,7 +47,8 @@ class InstagramBottomState extends State<InstagramBottom> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(45),
                         image: const DecorationImage(
-                          image: AssetImage('assets/images/instagram/pilotando.jpg'),
+                          image: AssetImage(
+                              'assets/images/instagram/pilotando.jpg'),
                           fit: BoxFit.cover,
                         ),
                         border: Border.all(color: Colors.black, width: 1)),
@@ -66,7 +68,8 @@ class InstagramBottomState extends State<InstagramBottom> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(45),
                         image: const DecorationImage(
-                          image: AssetImage('assets/images/instagram/francia.jpg'),
+                          image:
+                              AssetImage('assets/images/instagram/francia.jpg'),
                           fit: BoxFit.cover,
                         ),
                         border: Border.all(color: Colors.black, width: 1)),
@@ -86,7 +89,8 @@ class InstagramBottomState extends State<InstagramBottom> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(45),
                         image: const DecorationImage(
-                          image: AssetImage('assets/images/instagram/arquitectura.jpg'),
+                          image: AssetImage(
+                              'assets/images/instagram/arquitectura.jpg'),
                           fit: BoxFit.cover,
                         ),
                         border: Border.all(color: Colors.black, width: 1)),
@@ -106,7 +110,8 @@ class InstagramBottomState extends State<InstagramBottom> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(45),
                         image: const DecorationImage(
-                          image: AssetImage('assets/images/instagram/retrato.jpg'),
+                          image:
+                              AssetImage('assets/images/instagram/retrato.jpg'),
                           fit: BoxFit.cover,
                         ),
                         border: Border.all(color: Colors.black, width: 1)),
@@ -122,60 +127,63 @@ class InstagramBottomState extends State<InstagramBottom> {
           ),
         ),
         const SizedBox(height: 12),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            IconButton(
-              icon: const Icon(Icons.grid_on_rounded, size: 30),
-              onPressed: () {
-                setState(() {
-                  muestraGrid = true;
-                });
-              },
-            ),
-            IconButton(
-              icon: const Icon(Icons.person_pin_sharp, size: 30),
-              onPressed: () {
-                setState(() {
-                  muestraGrid = false;
-                });
-              },
-            ),
-          ],
-        ),
-        const SizedBox(height: 8),
-        Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: SizedBox(
-              height: 220,
-              child: muestraGrid
-                  ? GridView.count(
-                      mainAxisSpacing: 2,
-                      crossAxisSpacing: 2,
-                      crossAxisCount: 3,
-                      children: List.generate(9, (index) {
-                        return SizedBox(
-                          width: 100,
-                          height: 100,
-                          child: Image.asset(
-                            'assets/images/instagram/grid${index + 1}.jpg',
-                            fit: BoxFit.cover,
-                          ),
-                        );
-                      }),
-                    )
-                  : Center(
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
-                          image: const DecorationImage(
-                            image: AssetImage('assets/images/instagram/relax.jpg'),
-                            fit: BoxFit.cover,
+        DefaultTabController(
+          length: 2,
+          child: Column(
+            children: [
+              TabBar(
+                tabs: [
+                  Tab(icon: Icon(Icons.grid_on_rounded, size: 30)),
+                  Tab(icon: Icon(Icons.person_pin_sharp, size: 30)),
+                ],
+                onTap: (index) {
+                  setState(() {
+                    muestraGrid = index == 0;
+                  });
+                },
+              ),
+              const SizedBox(height: 8),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: SizedBox(
+                  height: 220,
+                  child: TabBarView(
+                    physics: NeverScrollableScrollPhysics(),
+                    children: [
+                      GridView.count(
+                        mainAxisSpacing: 2,
+                        crossAxisSpacing: 2,
+                        crossAxisCount: 3,
+                        children: List.generate(9, (index) {
+                          return SizedBox(
+                            width: 100,
+                            height: 100,
+                            child: Image.asset(
+                              'assets/images/instagram/grid${index + 1}.jpg',
+                              fit: BoxFit.cover,
+                            ),
+                          );
+                        }),
+                      ),
+                      Center(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(5),
+                            image: const DecorationImage(
+                              image: AssetImage(
+                                  'assets/images/instagram/relax.jpg'),
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-            )),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[

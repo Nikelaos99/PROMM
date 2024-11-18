@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+import 'package:tema1_actividad1/screens/screens.dart';
+
 
 class NavegacionDrawer extends StatelessWidget {
   const NavegacionDrawer({super.key});
@@ -47,63 +48,63 @@ Widget buildMenuItems(BuildContext context) => Column(
           leading: const Icon(Icons.home_outlined),
           title: const Text('Nombre y Repositorio'),
           onTap: () {
-            Navigator.pushNamed(context, '/');
+            Navigator.pushReplacementNamed(context, '/');
           },
         ),
         ListTile(
           leading: const Icon(Icons.table_rows),
           title: const Text('Fotos en Fila'),
           onTap: () {
-            Navigator.pushNamed(context, '/fotos_fila');
+            Navigator.pushReplacementNamed(context, '/fotos_fila');
           },
         ),
         ListTile(
           leading: const Icon(Icons.view_column),
           title: const Text('Fotos en Columna'),
           onTap: () {
-            Navigator.pushNamed(context, '/fotos_columna');
+            Navigator.pushReplacementNamed(context, '/fotos_columna');
           },
         ),
         ListTile(
           leading: const Icon(Icons.workspaces_outline),
           title: const Text('Iconos'),
           onTap: () {
-            Navigator.pushNamed(context, '/iconos');
+            Navigator.pushReplacementNamed(context, '/iconos');
           },
         ),
         ListTile(
           leading: const Icon(Icons.star),
           title: const Text('Reto'),
           onTap: () {
-            Navigator.pushNamed(context, '/reto');
+            Navigator.pushReplacementNamed(context, '/reto');
           },
         ),
         ListTile(
           leading: const Icon(Icons.keyboard_arrow_up_outlined),
           title: const Text('Pirámide'),
           onTap: () {
-            Navigator.pushNamed(context, '/piramide');
+            Navigator.pushReplacementNamed(context, '/piramide');
           },
         ),
         ListTile(
           leading: const Icon(Icons.numbers),
           title: const Text('Contador'),
           onTap: () {
-            Navigator.pushNamed(context, '/contador');
+            Navigator.pushReplacementNamed(context, '/contador');
           },
         ),
         ListTile(
           leading: const Icon(Icons.camera_alt),
           title: const Text('Instagram'),
           onTap: () {
-            Navigator.pushNamed(context, '/instagram');
+            Navigator.pushReplacementNamed(context, '/instagram');
           },
         ),
         ListTile(
           leading: const Icon(Icons.gamepad),
           title: const Text('Juego'),
           onTap: () {
-            Navigator.pushNamed(context, '/juego');
+            Navigator.pushReplacementNamed(context, '/juego');
           },
         )
       ],

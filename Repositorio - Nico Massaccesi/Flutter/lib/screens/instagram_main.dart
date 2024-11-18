@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:tema1_actividad1/screens/navegacion_drawer.dart';
+import 'package:tema1_actividad1/screens/screens.dart';
 import 'package:tema1_actividad1/screens/instagram/instagram_top.dart';
 import 'package:tema1_actividad1/screens/instagram/instagram_middle.dart';
 import 'package:tema1_actividad1/screens/instagram/instagram_bottom.dart';

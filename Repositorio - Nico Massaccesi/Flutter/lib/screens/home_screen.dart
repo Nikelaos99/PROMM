@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:tema1_actividad1/screens/screens.dart';
+
 import 'package:google_fonts/google_fonts.dart';
-import 'package:tema1_actividad1/screens/navegacion_drawer.dart';
+
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

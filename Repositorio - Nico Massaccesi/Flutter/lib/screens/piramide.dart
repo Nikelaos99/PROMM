@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:tema1_actividad1/screens/navegacion_drawer.dart';
+import 'package:tema1_actividad1/screens/screens.dart';
+
 
 class Piramide extends StatelessWidget {
   const Piramide({super.key});

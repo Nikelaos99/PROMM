@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:math';
-import 'package:flutter/material.dart';
-import 'package:tema1_actividad1/screens/navegacion_drawer.dart';
+import 'package:tema1_actividad1/screens/screens.dart';
+
 
 // Clase principal del juego
 class Juego extends StatelessWidget {
