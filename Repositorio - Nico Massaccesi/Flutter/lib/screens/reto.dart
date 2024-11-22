@@ -11,10 +11,8 @@ class Reto extends StatelessWidget {
       drawer: const NavegacionDrawer(),
       appBar: AppBar(
         title: const Text('Reto'),
-        backgroundColor: Colors.orange,
       ),
       body: Container(
-        color: Colors.lightBlue,
         width: double.infinity,
         height: double.infinity,
         alignment: Alignment.center, //to align its child

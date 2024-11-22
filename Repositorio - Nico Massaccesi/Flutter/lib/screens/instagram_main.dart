@@ -9,10 +9,13 @@ class Instagram extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
         endDrawer: const NavegacionDrawer(),
+        backgroundColor: Colors.white, // Para mantener el diseño de instagram original
         appBar: AppBar(
+          backgroundColor: Colors.white, // Para mantener el diseño de instagram original
+          iconTheme: IconThemeData(color: Colors.black),
           title: const Row(
             children: [
-              Text('gatogatonson'),
+              Text('gatogatonson', style: TextStyle(color: Colors.black),),
               Icon(Icons.keyboard_arrow_down_rounded),
             ],
           ),

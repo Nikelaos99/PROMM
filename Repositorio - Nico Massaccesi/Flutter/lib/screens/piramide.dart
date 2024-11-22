@@ -9,7 +9,6 @@ class Piramide extends StatelessWidget {
         drawer: const NavegacionDrawer(),
         appBar: AppBar(
           title: const Text('Pirámide'),
-          backgroundColor: Colors.amber,
         ),
         body: Center(
           child: Column(

@@ -8,8 +8,7 @@ class FotosEnColumna extends StatelessWidget {
   Widget build(BuildContext context) => Scaffold(
         drawer: const NavegacionDrawer(),
         appBar: AppBar(
-          title: const Text('Fotos en Columna'),
-          backgroundColor: Colors.yellow,
+          title: const Text('Fotos en Columna')
         ),
         body: Center(
           child: Column(

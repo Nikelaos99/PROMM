@@ -9,8 +9,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
-          title: const Text('Home'),
-          backgroundColor: Colors.red.shade200,
+          title: const Text('Home')
         ),
         drawer: const NavegacionDrawer(),
         body: Center(
@@ -23,7 +22,7 @@ class HomePage extends StatelessWidget {
               ),
               Text(
                 'https://github.com/Nikelaos99/PROMM',
-                style: GoogleFonts.roboto(fontSize: 24, color: Colors.grey),
+                style: GoogleFonts.roboto(fontSize: 24, color: Colors.black),
               ),
             ],
           ),

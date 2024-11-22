@@ -46,7 +46,6 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       drawer: NavegacionDrawer(),
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
       body: Center(

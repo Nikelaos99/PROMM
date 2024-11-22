@@ -8,8 +8,7 @@ class FotosEnFila extends StatelessWidget {
   Widget build(BuildContext context) => Scaffold(
         drawer: const NavegacionDrawer(),
         appBar: AppBar(
-          title: const Text('Fotos en Fila'),
-          backgroundColor: Colors.yellow,
+          title: const Text('Fotos en Fila')
         ),
         body: Center(
           child: Row(
