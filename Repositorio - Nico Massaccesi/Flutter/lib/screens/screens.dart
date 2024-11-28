@@ -9,4 +9,5 @@ export "instagram_main.dart";
 export "fotos_en_columna.dart";
 export "navegacion_drawer.dart";
 export "juego.dart";
+export "siete_y_media_main.dart";
 export "package:tema1_actividad1/routes/app_routes.dart";

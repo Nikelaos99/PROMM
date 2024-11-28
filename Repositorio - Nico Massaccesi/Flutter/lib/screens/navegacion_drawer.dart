@@ -106,6 +106,13 @@ Widget buildMenuItems(BuildContext context) => Column(
           onTap: () {
             Navigator.pushReplacementNamed(context, '/juego');
           },
+        ),
+        ListTile(
+          leading: const Icon(Icons.casino_rounded),
+          title: const Text('Siete y Media'),
+          onTap: () {
+            Navigator.pushReplacementNamed(context, '/siete_y_media');
+          },
         )
       ],
     );

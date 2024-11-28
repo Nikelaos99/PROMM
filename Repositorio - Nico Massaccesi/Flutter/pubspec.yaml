@@ -89,6 +89,46 @@ flutter:
     - assets/images/instagram/grid8.jpg
     - assets/images/instagram/grid9.jpg
     - assets/images/instagram/relax.jpg
+    - assets/images/siete_y_media/1_oros.jpg
+    - assets/images/siete_y_media/2_oros.jpg 
+    - assets/images/siete_y_media/3_oros.jpg 
+    - assets/images/siete_y_media/4_oros.jpg 
+    - assets/images/siete_y_media/5_oros.jpg 
+    - assets/images/siete_y_media/6_oros.jpg 
+    - assets/images/siete_y_media/7_oros.jpg 
+    - assets/images/siete_y_media/sota_oros.jpg 
+    - assets/images/siete_y_media/caballo_oros.jpg 
+    - assets/images/siete_y_media/rey_oros.jpg 
+    - assets/images/siete_y_media/1_bastos.jpg 
+    - assets/images/siete_y_media/2_bastos.jpg 
+    - assets/images/siete_y_media/3_bastos.jpg 
+    - assets/images/siete_y_media/4_bastos.jpg 
+    - assets/images/siete_y_media/5_bastos.jpg 
+    - assets/images/siete_y_media/6_bastos.jpg 
+    - assets/images/siete_y_media/7_bastos.jpg 
+    - assets/images/siete_y_media/sota_bastos.jpg 
+    - assets/images/siete_y_media/caballo_bastos.jpg 
+    - assets/images/siete_y_media/rey_bastos.jpg 
+    - assets/images/siete_y_media/1_espadas.jpg 
+    - assets/images/siete_y_media/2_espadas.jpg 
+    - assets/images/siete_y_media/3_espadas.jpg 
+    - assets/images/siete_y_media/4_espadas.jpg 
+    - assets/images/siete_y_media/5_espadas.jpg 
+    - assets/images/siete_y_media/6_espadas.jpg 
+    - assets/images/siete_y_media/7_espadas.jpg 
+    - assets/images/siete_y_media/sota_espadas.jpg 
+    - assets/images/siete_y_media/caballo_espadas.jpg 
+    - assets/images/siete_y_media/rey_espadas.jpg 
+    - assets/images/siete_y_media/1_copas.jpg 
+    - assets/images/siete_y_media/2_copas.jpg 
+    - assets/images/siete_y_media/3_copas.jpg 
+    - assets/images/siete_y_media/4_copas.jpg 
+    - assets/images/siete_y_media/5_copas.jpg 
+    - assets/images/siete_y_media/6_copas.jpg 
+    - assets/images/siete_y_media/7_copas.jpg 
+    - assets/images/siete_y_media/sota_copas.jpg 
+    - assets/images/siete_y_media/caballo_copas.jpg 
+    - assets/images/siete_y_media/rey_copas.jpg
     
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
