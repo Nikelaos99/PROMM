@@ -1,19 +1,19 @@
+import 'package:flutter/material.dart';
 import 'package:tema1_actividad1/screens/screens.dart';
-
 
 class NavegacionDrawer extends StatelessWidget {
   const NavegacionDrawer({super.key});
 
   @override
   Widget build(BuildContext context) => Drawer(
-        child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              buildHeader(context),
-              buildMenuItems(context),
-            ],
-          ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            buildHeader(context),
+            Expanded(
+              child: buildMenuItems(context),
+            ),
+          ],
         ),
       );
 }
@@ -42,7 +42,7 @@ Widget buildHeader(BuildContext context) => Container(
       ),
     );
 
-Widget buildMenuItems(BuildContext context) => Column(
+Widget buildMenuItems(BuildContext context) => ListView(
       children: [
         ListTile(
           leading: const Icon(Icons.home_outlined),
@@ -113,6 +113,13 @@ Widget buildMenuItems(BuildContext context) => Column(
           onTap: () {
             Navigator.pushReplacementNamed(context, '/siete_y_media');
           },
-        )
+        ),
+        ListTile(
+          leading: const Icon(Icons.text_snippet_outlined),
+          title: const Text('Formulario'),
+          onTap: () {
+            Navigator.pushReplacementNamed(context, '/formulario');
+          },
+        ),
       ],
     );

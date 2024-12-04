@@ -1,5 +1,4 @@
 import 'package:tema1_actividad1/screens/screens.dart';
-import 'package:tema1_actividad1/screens/siete_y_media_main.dart';
 
 class AppRoutes {
   // Definir nombres para las rutas
@@ -13,6 +12,8 @@ class AppRoutes {
   static const String instagram = '/instagram';
   static const String juego = '/juego';
   static const String sieteYMedia = '/siete_y_media';
+  static const String formulario = '/formulario';
+
 
   // Mapa de rutas
   static final Map<String, WidgetBuilder> routes = {
@@ -26,6 +27,7 @@ class AppRoutes {
     instagram: (context) => const Instagram(),
     juego: (context) => Juego(),
     sieteYMedia: (context) => SieteYMedia(),
+    formulario: (context) => Formulario(),
   };
 
   

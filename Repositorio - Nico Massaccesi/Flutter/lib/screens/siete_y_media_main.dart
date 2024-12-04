@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:tema1_actividad1/screens/navegacion_drawer.dart';
+import 'package:tema1_actividad1/screens/screens.dart';
 import 'siete_y_media/logica_juego.dart';
 import 'siete_y_media/carta_widget.dart';
 

@@ -12,156 +12,64 @@ class InstagramBottomState extends State<InstagramBottom> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Column(
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12.0),
+            child: SizedBox(
+              height: 85,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
                 children: [
-                  Container(
-                    width: 65,
-                    height: 65,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(45),
-                        image: const DecorationImage(
-                          image:
-                              AssetImage('assets/images/instagram/nuevo.jpg'),
-                        ),
-                        border: Border.all(color: Colors.black, width: 1)),
-                  ),
-                  const SizedBox(height: 6),
-                  const Text(
-                    "Nuevo",
-                    style: TextStyle(fontSize: 13),
-                  ),
+                  construirElementoHistoria(
+                      'assets/images/instagram/nuevo.jpg', 'Nuevo'),
+                  construirElementoHistoria(
+                      'assets/images/instagram/pilotando.jpg', 'Pilotando'),
+                  construirElementoHistoria(
+                      'assets/images/instagram/francia.jpg', 'Francia'),
+                  construirElementoHistoria(
+                      'assets/images/instagram/arquitectura.jpg',
+                      'Arquitectura'),
+                  construirElementoHistoria(
+                      'assets/images/instagram/retrato.jpg', 'Retratos'),
+                  construirElementoHistoria(
+                      'assets/images/instagram/comida.jpg', 'Comida'),
+                  construirElementoHistoria(
+                      'assets/images/instagram/coche.jpg', 'Coches'),
                 ],
               ),
-              Column(
-                children: [
-                  Container(
-                    width: 65,
-                    height: 65,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(45),
-                        image: const DecorationImage(
-                          image: AssetImage(
-                              'assets/images/instagram/pilotando.jpg'),
-                          fit: BoxFit.cover,
-                        ),
-                        border: Border.all(color: Colors.black, width: 1)),
-                  ),
-                  const SizedBox(height: 6),
-                  const Text(
-                    "Pilotando",
-                    style: TextStyle(fontSize: 13),
-                  ),
-                ],
-              ),
-              Column(
-                children: [
-                  Container(
-                    width: 65,
-                    height: 65,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(45),
-                        image: const DecorationImage(
-                          image:
-                              AssetImage('assets/images/instagram/francia.jpg'),
-                          fit: BoxFit.cover,
-                        ),
-                        border: Border.all(color: Colors.black, width: 1)),
-                  ),
-                  const SizedBox(height: 6),
-                  const Text(
-                    "Francia",
-                    style: TextStyle(fontSize: 13),
-                  ),
-                ],
-              ),
-              Column(
-                children: [
-                  Container(
-                    width: 65,
-                    height: 65,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(45),
-                        image: const DecorationImage(
-                          image: AssetImage(
-                              'assets/images/instagram/arquitectura.jpg'),
-                          fit: BoxFit.cover,
-                        ),
-                        border: Border.all(color: Colors.black, width: 1)),
-                  ),
-                  const SizedBox(height: 6),
-                  const Text(
-                    "Arquitectura",
-                    style: TextStyle(fontSize: 13),
-                  ),
-                ],
-              ),
-              Column(
-                children: [
-                  Container(
-                    width: 65,
-                    height: 65,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(45),
-                        image: const DecorationImage(
-                          image:
-                              AssetImage('assets/images/instagram/retrato.jpg'),
-                          fit: BoxFit.cover,
-                        ),
-                        border: Border.all(color: Colors.black, width: 1)),
-                  ),
-                  const SizedBox(height: 6),
-                  const Text(
-                    "Retratos",
-                    style: TextStyle(fontSize: 13),
-                  ),
-                ],
-              ),
-            ],
+            ),
           ),
-        ),
-        const SizedBox(height: 12),
-        DefaultTabController(
-          length: 2,
-          child: Column(
-            children: [
-              TabBar(
-                tabs: [
-                  Tab(icon: Icon(Icons.grid_on_rounded, size: 30)),
-                  Tab(icon: Icon(Icons.person_pin_sharp, size: 30)),
-                ],
-                onTap: (index) {
-                  setState(() {
-                    muestraGrid = index == 0;
-                  });
-                },
-              ),
-              const SizedBox(height: 8),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: SizedBox(
+          const SizedBox(height: 12),
+          DefaultTabController(
+            length: 2,
+            child: Column(
+              children: [
+                TabBar(
+                  tabs: const [
+                    Tab(icon: Icon(Icons.grid_on_rounded, size: 30)),
+                    Tab(icon: Icon(Icons.person_pin_sharp, size: 30)),
+                  ],
+                  onTap: (index) {
+                    setState(() {
+                      muestraGrid = index == 0;
+                    });
+                  },
+                ),
+                const SizedBox(height: 8),
+                SizedBox(
                   height: 220,
                   child: TabBarView(
-                    physics: NeverScrollableScrollPhysics(),
                     children: [
                       GridView.count(
                         mainAxisSpacing: 2,
                         crossAxisSpacing: 2,
                         crossAxisCount: 3,
                         children: List.generate(9, (index) {
-                          return SizedBox(
-                            width: 100,
-                            height: 100,
-                            child: Image.asset(
-                              'assets/images/instagram/grid${index + 1}.jpg',
-                              fit: BoxFit.cover,
-                            ),
+                          return Image.asset(
+                            'assets/images/instagram/grid${index + 1}.jpg',
+                            fit: BoxFit.cover,
                           );
                         }),
                       ),
@@ -180,31 +88,56 @@ class InstagramBottomState extends State<InstagramBottom> {
                     ],
                   ),
                 ),
+              ],
+            ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              const Icon(Icons.home_rounded, size: 40),
+              const Icon(Icons.search_rounded, size: 40),
+              const Icon(Icons.add_circle, size: 40),
+              const Icon(Icons.favorite_rounded, size: 40),
+              Container(
+                width: 40,
+                height: 40,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(45),
+                  image: const DecorationImage(
+                    image: AssetImage('assets/images/instagram/retrato.jpg'),
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
             ],
           ),
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            const Icon(Icons.home_rounded, size: 40),
-            const Icon(Icons.search_rounded, size: 40),
-            const Icon(Icons.add_circle, size: 40),
-            const Icon(Icons.favorite_rounded, size: 40),
-            Container(
-              width: 40,
-              height: 40,
-              decoration: BoxDecoration(
+        ],
+      ),
+    );
+  }
+
+  Widget construirElementoHistoria(String rutaImagen, String etiqueta) {
+    return Padding(
+      padding: const EdgeInsets.only(right: 8.0),
+      child: Column(
+        children: [
+          Container(
+            width: 65,
+            height: 65,
+            decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(45),
-                image: const DecorationImage(
-                  image: AssetImage('assets/images/instagram/retrato.jpg'),
+                image: DecorationImage(
+                  image: AssetImage(rutaImagen),
                   fit: BoxFit.cover,
                 ),
-              ),
-            ),
-          ],
-        ),
-      ],
+                border: Border.all(color: Colors.black, width: 1)),
+          ),
+          Text(
+            etiqueta,
+            style: const TextStyle(fontSize: 13),
+          ),
+        ],
+      ),
     );
   }
 }

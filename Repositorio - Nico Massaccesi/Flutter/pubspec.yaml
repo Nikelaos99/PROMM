@@ -31,6 +31,10 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^6.2.1
+  intl: ^0.19.0
+  flutter_localizations:
+    sdk: flutter
+  numberpicker: ^2.1.2
 
 
 
@@ -41,6 +45,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -89,6 +94,8 @@ flutter:
     - assets/images/instagram/grid8.jpg
     - assets/images/instagram/grid9.jpg
     - assets/images/instagram/relax.jpg
+    - assets/images/instagram/comida.jpg
+    - assets/images/instagram/coche.jpg
     - assets/images/siete_y_media/1_oros.jpg
     - assets/images/siete_y_media/2_oros.jpg 
     - assets/images/siete_y_media/3_oros.jpg 
