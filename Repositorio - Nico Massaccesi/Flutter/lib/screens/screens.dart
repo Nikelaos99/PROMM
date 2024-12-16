@@ -12,6 +12,7 @@ export "navegacion_drawer.dart";
 export "juego.dart";
 export "siete_y_media_main.dart";
 export "formulario.dart";
+export "formulario2.dart";
 
 // Utilidades
 

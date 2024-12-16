@@ -121,5 +121,12 @@ Widget buildMenuItems(BuildContext context) => ListView(
             Navigator.pushReplacementNamed(context, '/formulario');
           },
         ),
+        ListTile(
+          leading: const Icon(Icons.text_snippet_outlined),
+          title: const Text('Formulario 2'),
+          onTap: () {
+            Navigator.pushReplacementNamed(context, '/formulario2');
+          },
+        ),
       ],
     );

@@ -13,7 +13,7 @@ class AppRoutes {
   static const String juego = '/juego';
   static const String sieteYMedia = '/siete_y_media';
   static const String formulario = '/formulario';
-
+  static const String formulario2 = '/formulario2';
 
   // Mapa de rutas
   static final Map<String, WidgetBuilder> routes = {
@@ -28,10 +28,6 @@ class AppRoutes {
     juego: (context) => Juego(),
     sieteYMedia: (context) => SieteYMedia(),
     formulario: (context) => Formulario(),
+    formulario2: (context) => Formulario2(),
   };
-
-  
 }
-
-
-    
